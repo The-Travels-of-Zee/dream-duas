@@ -103,7 +103,7 @@ const ContactForm = () => {
             </div>
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Message Sent!</h2>
-          <p className="text-gray-600 leading-relaxed">We'll get back to you within 24 hours.</p>
+          <p className="text-gray-600 leading-relaxed">We&apos;ll get back to you within 24 hours.</p>
         </motion.div>
       </div>
     );
@@ -128,7 +128,7 @@ const ContactForm = () => {
               Ask Us A Question
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">We're Here To Help You</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">We&apos;re Here To Help You</h1>
 
             <motion.div
               className="mx-auto h-1.5 bg-gradient-to-r from-accent via-(--danger) to-secondary rounded-full"
