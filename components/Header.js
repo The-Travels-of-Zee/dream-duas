@@ -5,7 +5,7 @@ import SingleScreenshot from "./SingleScreenshot";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col lg:flex-row items-stretch overflow-hidden">
+    <section className="pt-8 relative min-h-screen flex flex-col lg:flex-row items-stretch overflow-x-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating orbs */}
@@ -231,7 +231,7 @@ const HeroSection = () => {
           top-1/2 -translate-y-1/2
           right-[-60px] sm:right-[-40px]
           lg:left-1/2 lg:right-auto lg:-translate-x-1/2
-          w-[220px] sm:w-[240px] lg:w-[280px] max-w-xs
+          w-[180px] sm:w-[200px] lg:w-[240px] 2xl:w-[240px] max-w-xs
         "
       >
         {/* Glow effect behind screenshot */}

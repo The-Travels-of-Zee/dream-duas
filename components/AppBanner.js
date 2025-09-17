@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { Smartphone, Download, Bell, Sparkles } from "lucide-react";
 import { appBanner, googlePlayLink, appStoreLink } from "@/constants";
+import { FaApple, FaGooglePlay } from "react-icons/fa6";
 
 function AppBanner() {
   if (!appBanner) return null;
@@ -241,6 +242,22 @@ function AppBanner() {
                         >
                           <Download className="w-4 h-4 text-rich-black" />
                         </motion.div>
+                        <motion.div
+                          animate={{
+                            y: [0, 15, 0],
+                            rotate: [0, -8, 0],
+                            scale: [1, 1.05, 1],
+                          }}
+                          transition={{
+                            duration: 5,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                            delay: 2,
+                          }}
+                          className="absolute -bottom-8 left-40 w-8 h-8 bg-gradient-to-br from-gold to-mikado-yellow rounded-full shadow-lg flex items-center justify-center"
+                        >
+                          <Download className="w-4 h-4 text-rich-black" />
+                        </motion.div>
                       </>
                     )}
                   </div>
@@ -266,7 +283,7 @@ function AppBanner() {
                     <Link href={"/"} className="block relative">
                       <div className="bg-gradient-to-r from-mikado-yellow to-gold p-[2px] rounded-2xl shadow-2xl">
                         <div className="bg-rich-black/90 backdrop-blur-sm rounded-2xl p-4 flex items-center gap-4 hover:bg-rich-black/70 transition-all duration-300 min-w-[180px]">
-                          <img className="h-10 w-10" alt="google play logo" src="/stores/google-play.svg" />
+                          <FaGooglePlay className="h-10 w-10" alt="google play logo" src="/stores/google-play.svg" />
                           <div className="text-left">
                             <div className="text-xs text-gray-400 font-medium">Get it on</div>
                             <div className="text-white font-semibold">Google Play</div>
@@ -285,7 +302,7 @@ function AppBanner() {
                     <Link href={"/"} className="block relative">
                       <div className="bg-gradient-to-r from-gold to-mikado-yellow p-[2px] rounded-2xl shadow-2xl">
                         <div className="bg-rich-black/90 backdrop-blur-sm rounded-2xl p-4 flex items-center gap-4 hover:bg-rich-black/70 transition-all duration-300 min-w-[180px]">
-                          <img className="h-10 w-10" alt="app store logo" src="/stores/app-store.svg" />
+                          <FaApple className="h-11 w-11" alt="app store logo" />
                           <div className="text-left">
                             <div className="text-xs text-gray-400 font-medium">Download on the</div>
                             <div className="text-white font-semibold">App Store</div>
